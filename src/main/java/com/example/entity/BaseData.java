@@ -5,13 +5,13 @@ import java.lang.reflect.Field;
 import java.util.function.Consumer;
 
 public interface BaseData {
-    default <V> V asViewObject(Class<V> clazz, Consumer<V> consumer) {
-        V v = this.asViewObject(clazz);
+    default <V> V asTargetObject(Class<V> clazz, Consumer<V> consumer) {
+        V v = this.asTargetObject(clazz);
         consumer.accept(v);
         return v;
     }
 
-    default <V> V asViewObject(Class<V> clazz) {
+    default <V> V asTargetObject(Class<V> clazz) {
         try {
             Field[] declaredFields = clazz.getDeclaredFields();
             Constructor<V> constructor = clazz.getConstructor();
