@@ -13,7 +13,7 @@
   3. 如果 Target 还有其他字段 也可以自定义，例如测试用例中的genderNum(只是简单举的例子，按照项目实际来)
 
 ```java
- AccountVO accountVO = accountDTO.asViewObject(AccountVO.class,v->{
+ AccountVO accountVO = accountDTO.asTargetObject(AccountVO.class,v->{
             v.setGenderNum(Objects.equals(accountDTO.getGender(), "男") ? "1" : "0");
         });
 ```
