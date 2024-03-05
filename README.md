@@ -18,5 +18,6 @@
         });
 ```
 
-
+## <font color=red>注意</font>
+<font color=red>两个类 相同的字段名的字段类型 必须完全一样!!!</font>
 
