@@ -11,4 +11,6 @@ public class AccountVO {
     private String role;
     //男 1 女 0
     private String genderNum;
+
+    private Integer isDelete;
 }

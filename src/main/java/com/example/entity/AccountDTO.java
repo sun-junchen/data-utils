@@ -19,4 +19,5 @@ public class AccountDTO implements BaseData {
     private String email;
     private String role;
     private Date registerTime;
+    private Integer isDelete;
 }
